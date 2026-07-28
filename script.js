@@ -1,4 +1,5 @@
 const SURVEY_URL = '[INSERT SURVEY LINK]';
+const _eu = 'Dong.Yue', _ed = 'mayo.edu';
 
 document.addEventListener('DOMContentLoaded', function () {
   const pageUrl = window.location.href;
@@ -56,6 +57,14 @@ document.addEventListener('DOMContentLoaded', function () {
     waLink.setAttribute('href',
       'https://wa.me/?text=' + shareText + '%20' + encodeURIComponent(pageUrl)
     );
+  }
+
+  // Contact email (assembled at runtime to avoid bot scraping)
+  const contactLink = document.getElementById('contact-email');
+  if (contactLink) {
+    const addr = _eu + '@' + _ed;
+    contactLink.href = 'mailto:' + addr;
+    contactLink.textContent = addr;
   }
 });
 
