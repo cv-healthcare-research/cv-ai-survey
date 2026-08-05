@@ -1,4 +1,4 @@
-const SURVEY_URL = '[INSERT SURVEY LINK]';
+const SURVEY_URL = 'https://surveys.mayoclinic.org/jfe/form/SV_5aQwq4NfEpNhiaa';
 const _eu = 'Dong.Yue', _ed = 'mayo.edu';
 
 document.addEventListener('DOMContentLoaded', function () {
